@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificaciones Rojas - Interpol</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a365d;
+            margin-bottom: 30px;
+        }
+
+        /* Contenedor de la API */
+        .api {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            overflow-x: auto; /* Permite scroll horizontal en móviles */
+        }
+
+        /* Diseño de la Tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        /* Encabezado elegante */
+        thead tr {
+            background-color: #1a365d;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        th, td {
+            padding: 14px 18px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        /* Filas intercaladas */
+        tbody tr:nth-of-type(even) {
+            background-color: #f8fafc;
+        }
+
+        /* Efecto Hover al pasar el ratón */
+        tbody tr:hover {
+            background-color: #edf2f7;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Diseño de las Imágenes de Perfil */
+        .foto-perfil {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%; /* Hace la foto circular */
+            border: 2px solid #cbd5e1;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: #e2e8f0;
+        }
+
+        /* Estilo para cuando no hay foto */
+        .sin-foto {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #cbd5e1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: #64748b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Alertas Rojas de Interpol</h1>
+
+    <div class="api">
+        <!-- La tabla se generará aquí -->
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
